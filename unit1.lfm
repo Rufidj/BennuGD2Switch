@@ -1,0 +1,96 @@
+object Form1: TForm1
+  Left = 1182
+  Height = 235
+  Top = 320
+  Width = 412
+  Caption = 'BennuGD2Switch'
+  ClientHeight = 215
+  ClientWidth = 412
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 13
+    Height = 15
+    Top = 32
+    Width = 41
+    Caption = 'Title_ID:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 13
+    Height = 15
+    Top = 80
+    Width = 25
+    Caption = 'Title:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 13
+    Height = 15
+    Top = 120
+    Width = 52
+    Caption = 'Publisher:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 88
+    Height = 23
+    Top = 32
+    Width = 272
+    MaxLength = 16
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 88
+    Height = 23
+    Top = 80
+    Width = 272
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 88
+    Height = 23
+    Top = 120
+    Width = 272
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 160
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Create NSP'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object ProgressBar1: TProgressBar
+    Left = 13
+    Height = 20
+    Top = 201
+    Width = 371
+    TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 180
+    Height = 1
+    Top = 184
+    Width = 1
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 15
+    Top = 184
+    Width = 54
+    Caption = 'Progress : '
+    ParentColor = False
+  end
+  object MainMenu1: TMainMenu
+    object MenuItem1: TMenuItem
+      Caption = 'About'
+      OnClick = MenuItem1Click
+    end
+  end
+end
